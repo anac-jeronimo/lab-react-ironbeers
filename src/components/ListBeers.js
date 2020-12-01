@@ -17,6 +17,12 @@ class ListBeers extends React.Component {
                 beers: response.data
             });
         });
+    } 
+
+    handleSearchBeer = (event) => {
+        const value = event.target.value;
+        const beersService = new BeersService();
+        beersService.handleSearchBeer
     }
 
     render() {
